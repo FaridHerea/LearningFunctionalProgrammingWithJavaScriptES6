@@ -1,0 +1,52 @@
+// nodeJS - Install npm (node package manager)
+npm install -g npm@latest
+
+// nodeJS - Check npm/node version
+npm -v
+node -v
+
+// nodeJS - Setup directory as an npm packace
+npm init -y
+// to overwrite
+npm init
+
+// ----- Babel -----
+// nodeJS - install necessary babel packages
+npm install --save @babel/core @babel/node @babel/preset-env
+// create a new file .babelrc
+{
+    "presets": ["@babel/preset-env"]
+}
+
+// nodeJS - run code in node
+node src/fileName.js
+
+// nodeJS - run code in ES6 syntax
+npx babel-node src/fileName.js
+
+// ----- ESLint -----
+// nodeJS - install ESLint dependency
+npm install --save-dev eslint
+
+// nodeJS - initialise ESLint
+npx eslint --init
+    - to check syntax, find problems, and enforce code style
+    - None of these
+    - Browser
+    - Use a popular style guide
+    - Airbnb
+    - Javascript
+
+// nodeJS - install ESLint immutable package
+npm install --save-dev eslint-plugin-immutable
+
+// add rules to the eslintrc.js
+  plugins: [
+      'immutable',
+  ] 
+  rules: {
+      'immutable/no-mutation:' 2; // 0 to specifically disable a rule
+  }
+
+// ----- An Array of English Words Library -----
+npm install --save an-array-of-english-words
